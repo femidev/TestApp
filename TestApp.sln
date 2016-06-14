@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{581633EB-B896-402F-8E60-36F3DA191C85}") = "TestApp", "TestApp\TestApp.lsxtproj", "{6A2DC8D3-C7C2-47CC-BCD9-23C1FAA1E22F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.Server", "TestApp\TestApp.Server\TestApp.Server.csproj", "{50048E2B-914F-48F6-B9F5-9127C5F38BE8}"
+EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "TestApp.HTMLClient", "TestApp\TestApp.HTMLClient\TestApp.HTMLClient.jsproj", "{9CDB3B62-6665-4E5A-90D0-E2B212DD2861}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A2DC8D3-C7C2-47CC-BCD9-23C1FAA1E22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A2DC8D3-C7C2-47CC-BCD9-23C1FAA1E22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A2DC8D3-C7C2-47CC-BCD9-23C1FAA1E22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A2DC8D3-C7C2-47CC-BCD9-23C1FAA1E22F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50048E2B-914F-48F6-B9F5-9127C5F38BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50048E2B-914F-48F6-B9F5-9127C5F38BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50048E2B-914F-48F6-B9F5-9127C5F38BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50048E2B-914F-48F6-B9F5-9127C5F38BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CDB3B62-6665-4E5A-90D0-E2B212DD2861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDB3B62-6665-4E5A-90D0-E2B212DD2861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDB3B62-6665-4E5A-90D0-E2B212DD2861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDB3B62-6665-4E5A-90D0-E2B212DD2861}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

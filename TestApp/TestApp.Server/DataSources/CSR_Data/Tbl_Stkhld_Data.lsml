@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityType
+    Name="Tbl_Stkhld_Datum">
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="Stkhld_ID"
+        IsReadOnly="True"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Hidden />
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="Stakeholder_Name"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Stakeholder_Category"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Stakeholder_Type"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Stakeholder_Scope"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Main_Focus"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Stakeholder_Diag_Level"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Existing_Relations"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Stakeholder_Stance"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Perception"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Contacts"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Usual_interlocutor"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Resource_of_Information"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DiagLevel_Id"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Cat_ID"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Local_Id"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Stance_Id"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Type_Id"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Value_Diag"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Value_Stance"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Value_Count"
+        PropertyType=":Int32?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityContainer
+    Name="CSR_Data">
+    <EntityContainer.Attributes>
+      <Partial />
+    </EntityContainer.Attributes>
+    <EntitySet
+      Name="Tbl_Stkhld_Data"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="Tbl_Stkhld_Datum" />
+    <QueryOperation
+      Name="Tbl_Stkhld_Data_Single"
+      ReturnType="Tbl_Stkhld_Datum">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="Stkhld_ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="Stkhld_ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="Tbl_Stkhld_Data" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Stkhld_ID"
+        ParameterType="Microsoft.LightSwitch:Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Stkhld_ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="Tbl_Stkhld_Data_SingleOrDefault"
+      ReturnType="Tbl_Stkhld_Datum">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="Stkhld_ID" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="Stkhld_ID" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="Tbl_Stkhld_Data" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Stkhld_ID"
+        ParameterType="Microsoft.LightSwitch:Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Stkhld_ID' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+  </EntityContainer>
+  <DataService
+    Name="CSR_DataDataService">
+    <DataService.Attributes>
+      <Partial />
+    </DataService.Attributes>
+    <EntitySetMapping
+      EntitySet="Tbl_Stkhld_Data">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="Tbl_Stkhld_Data" />
+        <SsdlProperty
+          Name="Stkhld_ID"
+          Nullable="False"
+          StoreGeneratedPattern="Identity"
+          Type="int"
+          Property="Tbl_Stkhld_Datum/Properties[Stkhld_ID]" />
+        <SsdlProperty
+          Name="Stakeholder Name"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Tbl_Stkhld_Datum/Properties[Stakeholder_Name]" />
+        <SsdlProperty
+          Name="Stakeholder Category"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Tbl_Stkhld_Datum/Properties[Stakeholder_Category]" />
+        <SsdlProperty
+          Name="Stakeholder Type"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Tbl_Stkhld_Datum/Properties[Stakeholder_Type]" />
+        <SsdlProperty
+          Name="Stakeholder Scope"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Tbl_Stkhld_Datum/Properties[Stakeholder_Scope]" />
+        <SsdlProperty
+          Name="Main Focus"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Tbl_Stkhld_Datum/Properties[Main_Focus]" />
+        <SsdlProperty
+          Name="Stakeholder Diag Level"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Tbl_Stkhld_Datum/Properties[Stakeholder_Diag_Level]" />
+        <SsdlProperty
+          Name="Existing Relations"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Tbl_Stkhld_Datum/Properties[Existing_Relations]" />
+        <SsdlProperty
+          Name="Stakeholder Stance"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Tbl_Stkhld_Datum/Properties[Stakeholder_Stance]" />
+        <SsdlProperty
+          Name="Perception"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Tbl_Stkhld_Datum/Properties[Perception]" />
+        <SsdlProperty
+          Name="Contacts"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Tbl_Stkhld_Datum/Properties[Contacts]" />
+        <SsdlProperty
+          Name="Usual interlocutor"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Tbl_Stkhld_Datum/Properties[Usual_interlocutor]" />
+        <SsdlProperty
+          Name="Resource of Information"
+          Nullable="True"
+          Type="nvarchar(max)"
+          Property="Tbl_Stkhld_Datum/Properties[Resource_of_Information]" />
+        <SsdlProperty
+          Name="DiagLevel_Id"
+          Nullable="True"
+          Type="int"
+          Property="Tbl_Stkhld_Datum/Properties[DiagLevel_Id]" />
+        <SsdlProperty
+          Name="Cat_ID"
+          Nullable="True"
+          Type="int"
+          Property="Tbl_Stkhld_Datum/Properties[Cat_ID]" />
+        <SsdlProperty
+          Name="Local_Id"
+          Nullable="True"
+          Type="int"
+          Property="Tbl_Stkhld_Datum/Properties[Local_Id]" />
+        <SsdlProperty
+          Name="Stance_Id"
+          Nullable="True"
+          Type="int"
+          Property="Tbl_Stkhld_Datum/Properties[Stance_Id]" />
+        <SsdlProperty
+          Name="Type_Id"
+          Nullable="True"
+          Type="int"
+          Property="Tbl_Stkhld_Datum/Properties[Type_Id]" />
+        <SsdlProperty
+          Name="Value_Diag"
+          Nullable="True"
+          Type="int"
+          Property="Tbl_Stkhld_Datum/Properties[Value_Diag]" />
+        <SsdlProperty
+          Name="Value_Stance"
+          Nullable="True"
+          Type="int"
+          Property="Tbl_Stkhld_Datum/Properties[Value_Stance]" />
+        <SsdlProperty
+          Name="Value_Count"
+          Nullable="True"
+          Type="int"
+          Property="Tbl_Stkhld_Datum/Properties[Value_Count]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+  </DataService>
+</ServiceApplication>
