@@ -28,7 +28,7 @@
               Name="Tbl_Stkhld_Data"
               Kind="Collection"
               DataType="CollectionView$Tbl_Stkhld_Datum"
-              View="Microsoft.LightSwitch.MobileWeb:TileList">
+              View="Microsoft.LightSwitch.MobileWeb:Table">
               <ContentItem.Attributes>
                 <DisplayName
                   Value="Tbl_Stkhld_Data" />
